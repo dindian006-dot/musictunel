@@ -9,7 +9,7 @@ export default function Home() {
     <>
       {/* Hero Section */}
       <section className="relative pt-32 pb-20 md:pt-48 md:pb-32 overflow-hidden">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,_var(--tw-gradient-stops))] from-indigo-500/20 via-zinc-950 to-zinc-950 -z-10" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,_var(--tw-gradient-stops))] from-indigo-500/20 via-white dark:via-zinc-950 to-white dark:to-zinc-950 -z-10" />
         <div className="max-w-7xl mx-auto px-6 flex flex-col items-center text-center">
           <motion.div 
             initial={{ opacity: 0, y: 20 }}
@@ -24,13 +24,13 @@ export default function Home() {
               </span>
               Latest Release v1.2.0
             </div>
-            <h1 className="text-5xl md:text-7xl font-bold tracking-tight mb-6 leading-[1.1]">
+            <h1 className="text-5xl md:text-7xl font-bold tracking-tight mb-6 leading-[1.1] text-zinc-900 dark:text-white">
               Your music,<br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-purple-400">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 to-purple-500 dark:from-indigo-400 dark:to-purple-400">
                 without limits.
               </span>
             </h1>
-            <p className="text-lg md:text-xl text-zinc-400 mb-8 leading-relaxed max-w-2xl mx-auto">
+            <p className="text-lg md:text-xl text-zinc-600 dark:text-zinc-400 mb-8 leading-relaxed max-w-2xl mx-auto">
               MusicTunel is a beautiful, open-source music player for Android. Stream your favorite tracks, download for offline listening, and enjoy an ad-free experience.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -38,7 +38,7 @@ export default function Home() {
                 <Download className="w-5 h-5" />
                 Download APK
               </a>
-              <a href="https://github.com" target="_blank" rel="noreferrer" className="flex items-center justify-center gap-2 bg-white/5 text-white px-8 py-4 rounded-full font-semibold hover:bg-white/10 transition-colors border border-white/10">
+              <a href="https://github.com" target="_blank" rel="noreferrer" className="flex items-center justify-center gap-2 bg-zinc-100 dark:bg-white/5 text-zinc-900 dark:text-white px-8 py-4 rounded-full font-semibold hover:bg-zinc-200 dark:hover:bg-white/10 transition-colors border border-zinc-200 dark:border-white/10">
                 <Github className="w-5 h-5" />
                 View Source
               </a>
@@ -86,8 +86,8 @@ export default function Home() {
                 </div>
               </MockupFrame>
               <div className="text-center lg:text-left">
-                <h3 className="text-2xl font-bold mb-3">Beautiful Player</h3>
-                <p className="text-zinc-400">A clean, immersive playback experience that puts your music front and center.</p>
+                <h3 className="text-2xl font-bold mb-3 text-zinc-900 dark:text-white">Beautiful Player</h3>
+                <p className="text-zinc-600 dark:text-zinc-400">A clean, immersive playback experience that puts your music front and center.</p>
               </div>
             </motion.div>
 
@@ -124,8 +124,8 @@ export default function Home() {
                 </div>
               </MockupFrame>
               <div className="text-center lg:text-left">
-                <h3 className="text-2xl font-bold mb-3">Smart Library</h3>
-                <p className="text-zinc-400">Organize your music with ease. Automatic categorization and smart playlists at your fingertips.</p>
+                <h3 className="text-2xl font-bold mb-3 text-zinc-900 dark:text-white">Smart Library</h3>
+                <p className="text-zinc-600 dark:text-zinc-400">Organize your music with ease. Automatic categorization and smart playlists at your fingertips.</p>
               </div>
             </motion.div>
 
@@ -169,8 +169,8 @@ export default function Home() {
                 </div>
               </MockupFrame>
               <div className="text-center lg:text-left">
-                <h3 className="text-2xl font-bold mb-3">Dynamic Themes</h3>
-                <p className="text-zinc-400">Full Material You support. The app's colors adapt to your wallpaper and system theme.</p>
+                <h3 className="text-2xl font-bold mb-3 text-zinc-900 dark:text-white">Dynamic Themes</h3>
+                <p className="text-zinc-600 dark:text-zinc-400">Full Material You support. The app's colors adapt to your wallpaper and system theme.</p>
               </div>
             </motion.div>
           </div>
@@ -178,11 +178,11 @@ export default function Home() {
       </section>
 
       {/* Features Section */}
-      <section id="features" className="py-24 bg-zinc-900/50">
+      <section id="features" className="py-24 bg-zinc-50 dark:bg-zinc-900/50">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center max-w-2xl mx-auto mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Everything you need</h2>
-            <p className="text-zinc-400">MusicTunel is packed with features to make your listening experience perfect, without any of the bloat.</p>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-zinc-900 dark:text-white">Everything you need</h2>
+            <p className="text-zinc-600 dark:text-zinc-400">MusicTunel is packed with features to make your listening experience perfect, without any of the bloat.</p>
           </div>
           
           <div className="grid md:grid-cols-3 gap-8">
@@ -222,24 +222,24 @@ export default function Home() {
 
       {/* Download Section */}
       <section id="download" className="py-24 relative overflow-hidden">
-        <div className="absolute inset-0 bg-indigo-500/5" />
+        <div className="absolute inset-0 bg-indigo-500/5 dark:bg-indigo-500/5" />
         <div className="max-w-4xl mx-auto px-6 text-center relative z-10">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">Ready to tune in?</h2>
-          <p className="text-xl text-zinc-400 mb-10 max-w-2xl mx-auto">
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-zinc-900 dark:text-white">Ready to tune in?</h2>
+          <p className="text-xl text-zinc-600 dark:text-zinc-400 mb-10 max-w-2xl mx-auto">
             Download MusicTunel today and take control of your music listening experience. Free and open-source forever.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <a href="#" className="w-full sm:w-auto flex items-center justify-center gap-3 bg-white text-black px-8 py-4 rounded-2xl font-semibold hover:bg-zinc-200 transition-colors group">
+            <a href="#" className="w-full sm:w-auto flex items-center justify-center gap-3 bg-zinc-900 dark:bg-white text-white dark:text-black px-8 py-4 rounded-2xl font-semibold hover:bg-zinc-800 dark:hover:bg-zinc-200 transition-colors group">
               <Download className="w-6 h-6 group-hover:-translate-y-1 transition-transform" />
               <div className="text-left">
-                <div className="text-xs font-medium text-zinc-600">Download for</div>
+                <div className="text-xs font-medium text-zinc-400 dark:text-zinc-600">Download for</div>
                 <div className="text-lg leading-none mt-0.5">Android (APK)</div>
               </div>
             </a>
-            <a href="#" className="w-full sm:w-auto flex items-center justify-center gap-3 bg-zinc-800 text-white px-8 py-4 rounded-2xl font-semibold hover:bg-zinc-700 transition-colors group">
+            <a href="#" className="w-full sm:w-auto flex items-center justify-center gap-3 bg-zinc-100 dark:bg-zinc-800 text-zinc-900 dark:text-white px-8 py-4 rounded-2xl font-semibold hover:bg-zinc-200 dark:hover:bg-zinc-700 transition-colors group border border-zinc-200 dark:border-white/5">
               <Github className="w-6 h-6 group-hover:rotate-12 transition-transform" />
               <div className="text-left">
-                <div className="text-xs font-medium text-zinc-400">Available on</div>
+                <div className="text-xs font-medium text-zinc-500 dark:text-zinc-400">Available on</div>
                 <div className="text-lg leading-none mt-0.5">GitHub</div>
               </div>
             </a>

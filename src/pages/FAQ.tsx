@@ -11,13 +11,13 @@ function FAQItem({ question, answer }: FAQItemProps) {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="border-b border-white/5">
+    <div className="border-b border-zinc-200 dark:border-white/5">
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="w-full py-6 flex items-center justify-between text-left hover:text-indigo-400 transition-colors group"
+        className="w-full py-6 flex items-center justify-between text-left hover:text-indigo-500 transition-colors group"
       >
-        <span className="text-lg font-medium pr-8">{question}</span>
-        <div className={`p-2 rounded-full bg-zinc-900 group-hover:bg-indigo-500/10 transition-colors ${isOpen ? 'bg-indigo-500/10 text-indigo-400' : 'text-zinc-500'}`}>
+        <span className="text-lg font-medium pr-8 text-zinc-900 dark:text-white">{question}</span>
+        <div className={`p-2 rounded-full bg-zinc-100 dark:bg-zinc-900 group-hover:bg-indigo-500/10 transition-colors ${isOpen ? 'bg-indigo-500/10 text-indigo-400' : 'text-zinc-500'}`}>
           {isOpen ? <ChevronUp className="w-5 h-5" /> : <ChevronDown className="w-5 h-5" />}
         </div>
       </button>
@@ -30,7 +30,7 @@ function FAQItem({ question, answer }: FAQItemProps) {
             transition={{ duration: 0.3, ease: 'easeInOut' }}
             className="overflow-hidden"
           >
-            <p className="pb-6 text-zinc-400 leading-relaxed">
+            <p className="pb-6 text-zinc-600 dark:text-zinc-400 leading-relaxed">
               {answer}
             </p>
           </motion.div>
@@ -84,12 +84,12 @@ export default function FAQ() {
             <HelpCircle className="w-4 h-4" />
             Support Center
           </div>
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 tracking-tight">Frequently Asked Questions</h2>
-          <p className="text-zinc-400">Everything you need to know about MusicTunel and how it works.</p>
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 tracking-tight text-zinc-900 dark:text-white">Frequently Asked Questions</h2>
+          <p className="text-zinc-600 dark:text-zinc-400">Everything you need to know about MusicTunel and how it works.</p>
         </div>
 
-        <div className="bg-zinc-900/30 border border-white/5 rounded-[2rem] p-8 md:p-12">
-          <div className="divide-y divide-white/5">
+        <div className="bg-zinc-50 dark:bg-zinc-900/30 border border-zinc-200 dark:border-white/5 rounded-[2rem] p-8 md:p-12">
+          <div className="divide-y divide-zinc-200 dark:divide-white/5">
             {faqs.map((faq, index) => (
               <div key={index}>
                 <FAQItem question={faq.question} answer={faq.answer} />

@@ -8,8 +8,8 @@ export default function Providers() {
     <section id="providers" className="pt-32 pb-24 relative overflow-hidden min-h-screen">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center max-w-2xl mx-auto mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Our Trusted Providers</h2>
-          <p className="text-zinc-400">MusicTunel integrates with industry-leading services and technologies to deliver a world-class experience.</p>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-zinc-900 dark:text-white">Our Trusted Providers</h2>
+          <p className="text-zinc-600 dark:text-zinc-400">MusicTunel integrates with industry-leading services and technologies to deliver a world-class experience.</p>
         </div>
 
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8">
@@ -34,12 +34,12 @@ export default function Providers() {
             category="CDN & Security"
           />
           <ProviderCard 
-            icon={<div className="w-8 h-8 text-white flex items-center justify-center"><svg viewBox="0 0 24 24" fill="currentColor" className="w-full h-full"><path d="M24 22.525H0l12-21.05 12 21.05z"/></svg></div>}
+            icon={<div className="w-8 h-8 text-zinc-900 dark:text-white flex items-center justify-center"><svg viewBox="0 0 24 24" fill="currentColor" className="w-full h-full"><path d="M24 22.525H0l12-21.05 12 21.05z"/></svg></div>}
             name="Vercel"
             category="Deployment"
           />
           <ProviderCard 
-            icon={<Github className="w-8 h-8 text-white" />}
+            icon={<Github className="w-8 h-8 text-zinc-900 dark:text-white" />}
             name="GitHub"
             category="Open Source"
           />
