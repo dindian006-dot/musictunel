@@ -13,9 +13,8 @@ A FOSS YouTube Music client for Android and Desktop with many features from<br>S
 
 <h4>Download</h4>  
 
-<a href="https://github.com/dindian006/MusicTunel/releases">
-<img src="https://raw.githubusercontent.com/NeoApplications/Neo-Backup/034b226cea5c1b30eb4f6a6f313e4dadcbb0ece4/badge_github.png" width="200">
-</a>
+ https://musictunel.com
+
 
 </div>  
 
