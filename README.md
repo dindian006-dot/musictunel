@@ -1,5 +1,4 @@
-<div align="center"> 
-<img src="https://raw.githubusercontent.com/dindian006/MusicTunel/main/fastlane/metadata/android/en-US/images/featureGraphic.png"> 
+
 <h1>MusicTunel</h1>  
 
 A FOSS YouTube Music client for Android and Desktop with many features from<br>Spotify, SponsorBlock, ReturnYouTubeDislike using Compose Multiplatform to develop.
@@ -98,13 +97,7 @@ All content is streamed directly from YouTube servers.
 
 We strongly encourage users to subscribe to **YouTube Premium** to support artists and creators.
 
-## Contribute
 
-All contributions are welcome.
-
-https://github.com/dindian006/MusicTunel
-
-Thanks to all contributors ❤️
 
 ## Showcase
 
@@ -112,5 +105,3 @@ This project follows **Clean Architecture** and **MVVM pattern**.
 
 ---
 
-*This project is an open-source project by*  
-**dindian006**
