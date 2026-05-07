@@ -59,14 +59,14 @@ export default function DownloadModal() {
               <div className="p-8 pt-4 space-y-4">
                 {/* Regular Version */}
                 <button
-                  onClick={() => handleDownload('musictunel.apk')}
+                  onClick={() => handleDownload('musictunel.lite.apk')}
                   className="w-full group flex items-center gap-4 p-4 rounded-2xl bg-zinc-50 dark:bg-zinc-800/50 hover:bg-indigo-50 dark:hover:bg-indigo-500/10 border border-zinc-200 dark:border-white/5 hover:border-indigo-200 dark:hover:border-indigo-500/20 transition-all text-left"
                 >
                   <div className="w-12 h-12 bg-white dark:bg-zinc-800 rounded-xl flex items-center justify-center shadow-sm group-hover:scale-110 transition-transform">
                     <Smartphone className="w-6 h-6 text-indigo-500" />
                   </div>
                   <div className="flex-1">
-                    <div className="font-bold text-zinc-900 dark:text-white">Versi Biasa</div>
+                    <div className="font-bold text-zinc-900 dark:text-white">Versi Lite</div>
                     <div className="text-sm text-zinc-500 dark:text-zinc-400">Direkomendasikan (v8.0+)</div>
                   </div>
                   <Download className="w-5 h-5 text-zinc-300 dark:text-zinc-600 group-hover:text-indigo-500 group-hover:translate-y-px transition-all" />
