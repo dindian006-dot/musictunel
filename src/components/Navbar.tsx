@@ -15,6 +15,7 @@ export default function Navbar() {
     { name: 'Features', path: '/#features' },
     { name: 'About Us', path: '/about' },
     { name: 'Our Provider', path: '/providers' },
+    { name: 'Our Apps', path: '/apps' },
     { name: 'FAQ', path: '/faq' },
   ];
 
