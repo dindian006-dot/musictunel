@@ -20,28 +20,7 @@ export default function Apps() {
       themeColor: 'red',
       icon: (
         <div className="relative w-28 h-28 flex items-center justify-center filter drop-shadow-[0_8px_16px_rgba(0,0,0,0.4)]">
-          {/* Popcorn container box SVG */}
-          <svg viewBox="0 0 100 100" className="w-full h-full">
-            {/* Popcorn Fluff on top */}
-            <circle cx="38" cy="30" r="12" fill="#FBBF24" />
-            <circle cx="50" cy="24" r="14" fill="#FBBF24" />
-            <circle cx="62" cy="30" r="12" fill="#FBBF24" />
-            <circle cx="45" cy="32" r="10" fill="#F59E0B" />
-            <circle cx="55" cy="32" r="10" fill="#F59E0B" />
-            
-            {/* Popcorn Bucket */}
-            <path d="M30 40 L70 40 L64 90 L36 90 Z" fill="#EF4444" />
-            {/* White stripes */}
-            <path d="M37 40 L43 40 L41 90 L37 90 Z" fill="#FFFFFF" />
-            <path d="M47 40 L53 40 L52 90 L48 90 Z" fill="#FFFFFF" />
-            <path d="M57 40 L63 40 L59 90 L55 90 Z" fill="#FFFFFF" />
-            
-            {/* Blue play badge in center */}
-            <circle cx="50" cy="65" r="16" fill="#DBEAFE" stroke="#3B82F6" strokeWidth="2" />
-            <circle cx="50" cy="65" r="12" fill="#3B82F6" />
-            {/* Play triangle */}
-            <polygon points="47,59 57,65 47,71" fill="#FFFFFF" />
-          </svg>
+          <img src={import.meta.env.BASE_URL + "layarfilm.png"} alt="LayarFilm Logo" className="w-24 h-24 object-contain rounded-3xl" />
         </div>
       ),
       headerBg: 'bg-gradient-to-b from-[#4A0E17] to-[#1E1E24]',
@@ -63,14 +42,7 @@ export default function Apps() {
       themeColor: 'blue',
       icon: (
         <div className="relative w-28 h-28 flex items-center justify-center filter drop-shadow-[0_8px_16px_rgba(0,0,0,0.4)]">
-          {/* Listplay stylized icon */}
-          <div className="w-24 h-24 rounded-3xl bg-gradient-to-br from-[#1E293B] to-[#0F172A] border border-white/10 flex items-center justify-center p-4">
-            <svg viewBox="0 0 100 100" className="w-full h-full">
-              {/* Red double-arrow play symbol */}
-              <path d="M20 20 L80 50 L20 80 L35 50 Z" fill="#EF4444" />
-              <path d="M35 32 L70 50 L35 68 L45 50 Z" fill="#DC2626" />
-            </svg>
-          </div>
+          <img src={import.meta.env.BASE_URL + "listplay.png"} alt="Listplay Logo" className="w-24 h-24 object-contain rounded-3xl" />
         </div>
       ),
       headerBg: 'bg-gradient-to-b from-[#0F2942] to-[#1E1E24]',
